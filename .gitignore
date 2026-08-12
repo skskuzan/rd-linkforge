@@ -1,0 +1,23 @@
+# Binaries
+/bin/
+*.exe
+
+# Test and profiling output
+*.out
+*.test
+*.prof
+
+# Go workspace sum file — the workspace itself is committed
+go.work.sum
+
+# Local environment
+.env
+.env.local
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Claude Code local state
+.claude/settings.local.json
