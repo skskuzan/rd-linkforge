@@ -4,10 +4,8 @@ package auth
 
 import "time"
 
-// User is an account that owns links.
-//
-// PasswordHash never leaves this package's implementations and is never
-// serialised onto a transport.
+// User is an account that owns links. PasswordHash is never serialised onto a
+// transport.
 type User struct {
 	ID           string
 	Email        string

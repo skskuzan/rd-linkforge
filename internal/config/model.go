@@ -1,7 +1,5 @@
-// Package config defines how runtime configuration is obtained.
-//
-// Configuration is environment-only and validated at startup: a malformed or
-// missing value fails the process rather than surfacing as a runtime error.
+// Package config defines how runtime configuration is obtained. Configuration
+// is environment-only and validated at startup.
 package config
 
 import "time"
