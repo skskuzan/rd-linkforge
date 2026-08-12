@@ -1,6 +1,6 @@
 # Linkforge
 
-A URL shortener with real-time click analytics, built incrementally as the course project for **Golang для розробників**.
+A URL shortener with real-time click analytics, built incrementally as the course project for **Golang for developers**.
 
 The design is specified in the project TDD; this repository is the skeleton it describes.
 
