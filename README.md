@@ -13,6 +13,9 @@ Each file declares exactly one interface alongside its no-op implementation, so 
 ## Layout
 
 ```
+cmd/      linkforged        service binary — prints its version, nothing more
+          linkctl           operator CLI   — prints its version, nothing more
+
 pkg/                        reusable libraries — a separate Go module
   shortid/  Codec           base62 encode/decode                       M1
             Generator       collision-resistant code issuing           M4
