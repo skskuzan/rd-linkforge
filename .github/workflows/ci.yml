@@ -53,6 +53,13 @@ jobs:
           go-version: "1.25"
           cache: true
 
-      - uses: golangci/golangci-lint-action@v6
+      # v8 is the first release that installs golangci-lint v2, which this
+      # repository's config targets and which supports Go 1.25 modules.
+      - uses: golangci/golangci-lint-action@v8
         with:
           version: latest
+
+      - uses: golangci/golangci-lint-action@v8
+        with:
+          version: latest
+          working-directory: pkg

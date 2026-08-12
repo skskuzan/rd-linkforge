@@ -30,6 +30,7 @@ vet: ## Run go vet
 .PHONY: lint
 lint: ## Run golangci-lint (install: brew install golangci-lint)
 	golangci-lint run
+	cd pkg && golangci-lint run
 
 .PHONY: tidy
 tidy: ## Tidy every module in the workspace
