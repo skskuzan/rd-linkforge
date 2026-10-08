@@ -1,3 +1,3 @@
-module github.com/skskuzan/rd-linkforge
+module github.com/victorkovalyov-teletec/linkforge
 
 go 1.25

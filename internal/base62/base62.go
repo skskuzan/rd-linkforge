@@ -19,7 +19,7 @@ func Encode(v uint64) string {
 	// result
 	var res []byte
 
-	// div value by teh "base" of the count system, so we have first (least significannt) symbol
+	// div value by the "base" of the count system, so we have first (least significannt) symbol
 	// and keep dividing till we have something in value
 	// each time symbol will became more significant
 	for {
@@ -30,7 +30,7 @@ func Encode(v uint64) string {
 		}
 	}
 
-	// we syarted with least significat symbol. so, we have to reverse to get string
+	// we syarted with least significant symbol. so, we have to reverse to get string
 	// in right order
 	slices.Reverse(res)
 
