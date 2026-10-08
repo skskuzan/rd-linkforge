@@ -1,4 +1,4 @@
-// Command linkforged is the Linkforge service binary.
+// Command linkforge is the Linkforge service binary.
 package main
 
 import "fmt"
@@ -7,5 +7,5 @@ import "fmt"
 var version = "dev"
 
 func main() {
-	fmt.Printf("linkforged %s\n", version)
+	fmt.Printf("linkforge %s\n", version)
 }
