@@ -19,6 +19,8 @@ cmd/      linkforge         service binary — prints its version, nothing more
 pkg/                        reusable libraries — a separate Go module
   shortid/  Generator       collision-resistant code issuing           M4
   cache/    Cache[K,V]      bounded cache on the redirect hot path     M4
+  trie/     Trie            alias prefix index for autocomplete        M4
+  topk/     TopK            bounded top-N ranking                      M4
 
 internal/                   application code
   base62/                   base62 encode/decode                       M1
@@ -69,7 +71,7 @@ Requires Go 1.25+. Linting uses [golangci-lint](https://golangci-lint.run) (`bre
 | M1 | 2–3 | base62 codec, `Link` model, in-memory store |
 | M2 | 4–5 | Methods, interfaces, generics, error values |
 | M3 | 6–7 | Files and `context`, CLI, `slog`, tests |
-| M4 | 8–9 | Own hash table, LRU, trie, top-N heap |
+| M4 | 8–9 | LRU cache, trie, top-N heap, code generator |
 | M5 | 10–11 | Ingestion pipeline, worker pool, synchronisation |
 | M6 | 12–13 | TCP resolver, graceful shutdown, Docker |
 | M7 | 14 | PostgreSQL and MongoDB stores |
